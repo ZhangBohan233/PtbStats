@@ -1,0 +1,517 @@
+<root>
+  <ShipInfo ShipName="鱼雷测试艇" CorePosX="5.360283" CorePosY="-3.962171" CorePosZ="-2.971637" HP="42910" CP="9460" MeanPosX="-8.381098" MeanPosY="1.60061" MeanPosZ="2" TotalX="38" TotalY="7" TotalZ="3.000001" PosY="6.5" NegY="-0.5" PartAmount="78" CMX="-8.33127" CMY="2.58892" CMZ="2" weight="9719.761" TotalBuoyancy="32505.86" SecurityCode="a5b1d961da1233826f8107c2429f748c" />
+  <parts>
+    <part Id="20100101" Name="Hull" weight="125" buoyancy="625">
+      <Rotation RotX="90" RotY="180" RotZ="0" />
+      <position posX="4.5" posY="2" posZ="1" />
+      <scale ScaX="10" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="20100101" Name="Hull" weight="125" buoyancy="625">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="4.5" posY="2" posZ="3" />
+      <scale ScaX="10" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="60100101" Name="Dock" weight="250" buoyancy="1250">
+      <Rotation RotX="0" RotY="180" RotZ="0" />
+      <position posX="4.5" posY="2" posZ="2" />
+      <scale ScaX="10" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="10.5" posY="2" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="10.5" posY="1" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="8.5" posY="1" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="6.5" posY="1" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="4.5" posY="1" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="2.5" posY="1" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="0.5" posY="1" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="20100101" Name="Hull" weight="125" buoyancy="625">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="4.5" posY="1" posZ="3" />
+      <scale ScaX="10" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="20100101" Name="Hull" weight="125" buoyancy="625">
+      <Rotation RotX="90" RotY="180" RotZ="0" />
+      <position posX="4.5" posY="1" posZ="1" />
+      <scale ScaX="10" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-1.5" posY="1" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-1.5" posY="2" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-3.5" posY="2" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="113000510" Name="Torpedo" weight="218.55" buoyancy="35.25">
+      <WeaponAimArea positive="180" reverse="-180" positive_c="180" reverse_c="-180" />
+      <Rotation RotX="0" RotY="270" RotZ="0" />
+      <position posX="-1.5" posY="3" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="113000510" Name="Torpedo" weight="218.55" buoyancy="35.25">
+      <WeaponAimArea positive="175" reverse="-30" positive_c="180" reverse_c="-180" />
+      <Rotation RotX="0" RotY="270" RotZ="0" />
+      <position posX="-5.5" posY="3" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-5.5" posY="2" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-7.5" posY="2" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-9.5" posY="2" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-11.5" posY="2" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="113000510" Name="Torpedo" weight="218.55" buoyancy="35.25">
+      <WeaponAimArea positive="30" reverse="-175" positive_c="180" reverse_c="-180" />
+      <Rotation RotX="0" RotY="270" RotZ="0" />
+      <position posX="-11.5" posY="3" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-13.5" posY="2" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="113000510" Name="Torpedo" weight="218.55" buoyancy="35.25">
+      <WeaponAimArea positive="180" reverse="-180" positive_c="180" reverse_c="-180" />
+      <Rotation RotX="0" RotY="270" RotZ="0" />
+      <position posX="-15.5" posY="3" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="20100101" Name="Hull" weight="125" buoyancy="625">
+      <Rotation RotX="270" RotY="0" RotZ="0" />
+      <position posX="-21.5" posY="2" posZ="1" />
+      <scale ScaX="10" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="20100101" Name="Hull" weight="125" buoyancy="625">
+      <Rotation RotX="90" RotY="0" RotZ="0" />
+      <position posX="-21.5" posY="2" posZ="3" />
+      <scale ScaX="10" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="60100101" Name="Dock" weight="250" buoyancy="1250">
+      <Rotation RotX="0" RotY="180" RotZ="0" />
+      <position posX="-21.5" posY="2" posZ="2" />
+      <scale ScaX="10" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-3.5" posY="1" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-5.5" posY="1" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-7.5" posY="1" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-9.5" posY="1" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-11.5" posY="1" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-13.5" posY="1" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-15.5" posY="2" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="130000006" Name="Hull" weight="347.2222" buoyancy="462.963">
+      <appearance official="1" />
+      <turbine countX="3" countY="1" />
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-8.5" posY="5.5" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-9.5" posY="3" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-7.5" posY="3" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-9.5" posY="4" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-7.5" posY="4" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-15.5" posY="1" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-16" posY="0" posZ="3" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-15" posY="0" posZ="3" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-16" posY="0" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-15" posY="0" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-16" posY="0" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-15" posY="0" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-1" posY="0" posZ="3" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-2" posY="0" posZ="3" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-1" posY="0" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-2" posY="0" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-1" posY="0" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-2" posY="0" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-3" posY="0" posZ="3" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-3" posY="0" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-3" posY="0" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-14" posY="0" posZ="3" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-14" posY="0" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101000000" Name="magazine" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-14" posY="0" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="20100101" Name="Hull" weight="125" buoyancy="625">
+      <Rotation RotX="90" RotY="0" RotZ="0" />
+      <position posX="-21.5" posY="1" posZ="3" />
+      <scale ScaX="10" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="-17.5" posY="1" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="-19.5" posY="1" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="-21.5" posY="1" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="-23.5" posY="1" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="101" Name="Hull" weight="50" buoyancy="250">
+      <Rotation RotX="270" RotY="180" RotZ="0" />
+      <position posX="-25.5" posY="1" posZ="2" />
+      <scale ScaX="2" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="20100101" Name="Hull" weight="125" buoyancy="625">
+      <Rotation RotX="270" RotY="0" RotZ="0" />
+      <position posX="-21.5" posY="1" posZ="1" />
+      <scale ScaX="10" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="140000003" Name="Dock" weight="5" buoyancy="0.625">
+      <adScale ScaX="1.0" ScaY="1.0" ScaZ="1.0" />
+      <Rotation RotX="270" RotY="0" RotZ="0" />
+      <position posX="-17" posY="0" posZ="3" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="140000003" Name="Dock" weight="5" buoyancy="0.625">
+      <adScale ScaX="1.0" ScaY="1.0" ScaZ="1.0" />
+      <Rotation RotX="270" RotY="0" RotZ="0" />
+      <position posX="-17" posY="0" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="121" Name="Hull" weight="12.5" buoyancy="12.5">
+      <adScale ScaX="1.0" ScaY="1.0" ScaZ="1.0" />
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-23.5" posY="0" posZ="2.5" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="121" Name="Hull" weight="12.5" buoyancy="12.5">
+      <adScale ScaX="1.0" ScaY="1.0" ScaZ="1.0" />
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-23.5" posY="0" posZ="1.5" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="150000022" Name="Hull" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-6" posY="4" posZ="3" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="150000022" Name="Hull" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-6" posY="4" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="150000022" Name="Hull" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-6" posY="4" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-12.5" posY="0" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-10.5" posY="0" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-8.5" posY="0" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-6.5" posY="0" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="103" Name="Hull" weight="150" buoyancy="750">
+      <Rotation RotX="0" RotY="90" RotZ="0" />
+      <position posX="-4.5" posY="0" posZ="2" />
+      <scale ScaX="3" ScaY="1" ScaZ="2" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="150000028" Name="Hull" weight="5.005" buoyancy="0.65">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-6" posY="5" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+  </parts>
+  <ShipType type="DD_DF" efficiency="100.0" bridgePosX="-8.5" bridgePosZ="2" checkCode="d8c134b853c41f2626b694ea9f68656a" />
+  <ShipCard>
+    <ShipName Value="鱼雷测试艇" />
+    <Designer Value="Mobs" />
+    <Displacement Value="77.75803" />
+    <Volume Value="260.2469" />
+    <Length Value="38" />
+    <Width Value="3.001953" />
+    <Height Value="5.692383" />
+    <Draft Value="1.34" />
+    <HP Value="42910" />
+    <Drag Value="0.36" />
+    <MassCenterX Value="0.294" />
+    <MassCenterZ Value="0.000" />
+    <MainWeapon Value="0" />
+    <Range Value="0" />
+    <MainArmor Value="10" />
+    <Magazine Value="18" />
+    <NeedMagazine Value="16" />
+    <SpendMoney Value="1712525" />
+    <SpendTime Value="18417" />
+    <AA Value="0 / 0 / 0" />
+    <Plane Value="0 / 0" />
+  </ShipCard>
+  <CheakCode Designer="61332" DesignTime="1638019983" Code="ca2f0f5791ac96e496f82ca1287198f3" />
+  <CopyWriting Text="" />
+  <Collaborators />
+  <lines2 />
+  <painters />
+  <appliques />
+  <rebars />
+  <armorboards />
+  <seaspyplanes />
+  <mods />
+</root>

@@ -1,0 +1,1 @@
+C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python310\Scripts\pyinstaller.exe -F ship_stats.py

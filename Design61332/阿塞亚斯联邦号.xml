@@ -1,0 +1,101 @@
+<root>
+  <ShipInfo ShipName="阿塞亚斯联邦号" CorePosX="4.20536" CorePosY="-2.371242" CorePosZ="1.903941" HP="115" CP="4700" MeanPosX="-4.788462" MeanPosY="2.538461" MeanPosZ="1.153846" TotalX="11.5" TotalY="3" TotalZ="3" PosY="3.5" NegY="0.5" PartAmount="10" CMX="-6.103554" CMY="2.953754" CMZ="1.015415" weight="6487.037" TotalBuoyancy="4009.259" SecurityCode="fb4618b1251b966c51f05c795d13ea05" />
+  <parts>
+    <part Id="1" Name="Hull" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-1" posY="1" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="1" Name="Hull" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-2" posY="1" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="1" Name="Hull" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-2" posY="1" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="1" Name="Hull" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-1" posY="1" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="1" Name="Hull" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-2" posY="2" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="1" Name="Hull" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-1" posY="2" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="1" Name="Hull" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-1" posY="2" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="1" Name="Hull" weight="25" buoyancy="125">
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-2" posY="2" posZ="2" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="110004100" Name="Main_Weapon" weight="3143.519" buoyancy="1504.63">
+      <WeaponAimArea positive="180" reverse="-180" positive_c="180" reverse_c="-180" />
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-2" posY="3" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+    <part Id="110004100" Name="Main_Weapon" weight="3143.519" buoyancy="1504.63">
+      <WeaponAimArea positive="180" reverse="-180" positive_c="180" reverse_c="-180" />
+      <Rotation RotX="0" RotY="0" RotZ="0" />
+      <position posX="-10.5" posY="3" posZ="1" />
+      <scale ScaX="1" ScaY="1" ScaZ="1" />
+      <Color ColorR="0.5019608" ColorG="0.5019608" ColorB="0.5019608" />
+    </part>
+  </parts>
+  <ShipType type="auto" efficiency="0.0" bridgePosX="10000" bridgePosZ="10000" checkCode="67082cc90e9ad151bd7543c46a4e1f54" />
+  <ShipCard>
+    <ShipName Value="阿塞亚斯联邦号" />
+    <Designer Value="UnKown" />
+    <Displacement Value="51.8963" />
+    <Volume Value="32.07407" />
+    <Length Value="-2047.998" />
+    <Width Value="-2047.998" />
+    <Height Value="-0.1162109" />
+    <Draft Value="3.00" />
+    <HP Value="115" />
+    <Drag Value="1.25" />
+    <MassCenterX Value="-1.038" />
+    <MassCenterZ Value="-0.109" />
+    <MainWeapon Value="305" />
+    <Range Value="22000" />
+    <MainArmor Value="10" />
+    <Magazine Value="0" />
+    <NeedMagazine Value="56" />
+    <SpendMoney Value="450000" />
+    <SpendTime Value="6004" />
+    <AA Value="0 / 0 / 0" />
+    <Plane Value="0 / 0" />
+  </ShipCard>
+  <CheakCode Designer="61332" DesignTime="1641148936" Code="c700a950b351c8b5199fff72b517653f" />
+  <CopyWriting Text="" />
+  <Collaborators />
+  <lines2 />
+  <painters />
+  <appliques />
+  <rebars />
+  <armorboards />
+  <seaspyplanes />
+  <mods />
+</root>
