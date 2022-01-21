@@ -1,6 +1,7 @@
 reports/
 .idea/
 *.iml
+design/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

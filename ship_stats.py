@@ -2,6 +2,7 @@
 工艺战舰船只报告生成器
 
 作者: zbh
+version: 0.1.1
 """
 
 import os.path
@@ -190,8 +191,8 @@ class ShipStats:
 
         self.decor_weight = 0  # 装饰物品
 
-        self.upper_deck_y = -float("inf")  # 上甲板的y值
-        self.castle_deck_y = -float("inf")  # 楼甲板的y值
+        self.upper_deck_y = float("-inf")  # 上甲板的y值
+        self.castle_deck_y = float("-inf")  # 楼甲板的y值
 
         self.hull_vol = 0
         self.superstructure_vol = 0
@@ -202,6 +203,7 @@ class ShipStats:
         self.low_x = float("inf")
         self.low_y = num(self.ship_info.get("NegY"))
         self.low_z = float("inf")
+        self.water_line_y = float("-inf")
 
         self.parts: [Part] = []
         # 三维矩阵，xyz值，每0.5格为一个单元，从xyz的low值开始
@@ -221,9 +223,9 @@ class ShipStats:
                               self.other_propulsion_weight + self.turbine_volume * HULL_DENSITY
         magazine_weight = self.magazine * 5.4
         hangar_weight = self.hangar_count * 97.2
+        armor_total_weight = self.armor_plates_weight + self.armor_block_extra_weight
         hull_weight = \
-            self.displacement - self.armor_plates_weight - \
-            self.armor_block_extra_weight - engine_total_weight - self.weapon_weight - \
+            self.displacement - armor_total_weight - engine_total_weight - self.weapon_weight - \
             self.torpedo_weight - self.aa_weight - magazine_weight - hangar_weight - \
             self.decor_weight
 
@@ -235,10 +237,11 @@ class ShipStats:
 
         weights = "\n重量分布:\n" \
                   f"排水量: {round(self.displacement, 2)} 吨\n" \
-                  "装甲总重: " \
-                  f"{round(self.armor_plates_weight + self.armor_block_extra_weight, 2)} 吨\n" \
+                  f"装甲总重: {round(armor_total_weight, 2)} 吨\n" \
+                  f"  装甲板重: {round(self.armor_plates_weight, 2)} 吨\n" \
+                  f"  装甲舱重: {round(self.armor_block_extra_weight, 2)} 吨\n" \
                   f"动力系统总重: {round(engine_total_weight, 2)} 吨，功率: {self.horse_power} 马力\n" \
-                  f"武器系统总重（含炮塔）: {round(self.weapon_weight, 2)} 吨\n" \
+                  f"火炮总重（含炮塔）: {round(self.weapon_weight, 2)} 吨\n" \
                   f"鱼雷总重: {round(self.torpedo_weight, 2)} 吨\n" \
                   f"防空炮总重: {round(self.aa_weight, 2)} 吨\n" \
                   f"弹药库总重: {round(magazine_weight, 2)} 吨\n" \
@@ -318,11 +321,11 @@ class ShipStats:
                 x += 0.5
 
     def _calculate(self):
-        self._traversal_armors()
         self._traversal_parts()
         self._calculate_volumes()
         self._calculate_decks()
         self._calculate_coefficients()
+        self._traversal_armors()
 
     def _traversal_armors(self):
         armors = self.etree.find("armorboards")
@@ -377,6 +380,8 @@ class ShipStats:
                 self._add_part(part)
 
     def _calculate_decks(self):
+        self.water_line_y = self.low_y + self.draught / 3
+
         # 上甲板层的最低体积要求
         upper_deck_vol_req = self.water_length * self.water_width * self.block_coe * 1.5
         # 艏楼/艉楼/舯楼层最低体积要求
