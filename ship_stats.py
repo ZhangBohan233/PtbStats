@@ -6,6 +6,7 @@ version: 0.1.1
 """
 
 import os.path
+import sys
 import traceback
 from xml.etree import ElementTree
 from functools import reduce
@@ -172,11 +173,15 @@ class ShipStats:
         self.water_length = num(self.ship_card.find("Length").get("Value")) * 3
         self.water_width = num(self.ship_card.find("Width").get("Value")) * 3
         self.draught = num(self.ship_card.find("Draft").get("Value")) * 3
+        self.main_armor = num(self.ship_card.find("MainArmor").get("Value"))
+        self.min_armor = max(min(self.main_armor / 6.0, 76), 24)  # 低于这个厚度的不算装甲
+
         self.block_coe = self.displacement / (self.water_length * self.water_width * self.draught)
         self.prismatic_coe = 0
 
         self.armor_plates_weight = 0  # 装甲板总重
         self.armor_block_extra_weight = 0  # 装甲舱室总重-占用体积的船体重量
+        self.non_armor_plates = 0  # 厚度不够的装甲总重
 
         self.engine_self_weight = 0  # 烟囱自身重量
         self.turbine_module_weight = 0  # 轮机舱总重
@@ -228,6 +233,7 @@ class ShipStats:
             self.displacement - armor_total_weight - engine_total_weight - self.weapon_weight - \
             self.torpedo_weight - self.aa_weight - magazine_weight - hangar_weight - \
             self.decor_weight
+        hull_pure_weight = hull_weight - self.non_armor_plates
 
         detail = f"\n方形系数: {round(self.block_coe, 3)}\n" \
                  f"菱形系数: {round(self.prismatic_coe, 3)}\n" \
@@ -237,8 +243,10 @@ class ShipStats:
 
         weights = "\n重量分布:\n" \
                   f"排水量: {round(self.displacement, 2)} 吨\n" \
-                  f"装甲总重: {round(armor_total_weight, 2)} 吨\n" \
-                  f"  装甲板重: {round(self.armor_plates_weight, 2)} 吨\n" \
+                  f"装甲总重: {round(armor_total_weight, 2)} 吨，" \
+                  f"占比: {round(armor_total_weight / self.displacement * 100, 2)}%\n" \
+                  f"  装甲板重: {round(self.armor_plates_weight, 2)} 吨，" \
+                  f"占比: {round(self.armor_plates_weight / self.displacement * 100, 2)}%\n" \
                   f"  装甲舱重: {round(self.armor_block_extra_weight, 2)} 吨\n" \
                   f"动力系统总重: {round(engine_total_weight, 2)} 吨，功率: {self.horse_power} 马力\n" \
                   f"火炮总重（含炮塔）: {round(self.weapon_weight, 2)} 吨\n" \
@@ -247,7 +255,9 @@ class ShipStats:
                   f"弹药库总重: {round(magazine_weight, 2)} 吨\n" \
                   f"机库总重: {round(hangar_weight, 2)} 吨\n" \
                   f"装饰物品总重: {round(self.decor_weight, 2)} 吨\n" \
-                  f"船体重量: {round(hull_weight, 2)} 吨\n"
+                  f"船体重量: {round(hull_weight, 2)} 吨\n" \
+                  f"  船身重量: {round(hull_pure_weight, 2)} 吨\n" \
+                  f"  薄板材重量: {round(self.non_armor_plates, 2)} 吨\n"
 
         return f"{self.name}\n" + detail + weights
 
@@ -310,12 +320,12 @@ class ShipStats:
                             self.vol_matrix[self._index_x(x)][self._index_y(y)][
                                 self._index_z(z)] += sep_vol
                         except IndexError:
-                            print("Range:", (self.low_x, self.low_x + self.total_x),
+                            print("Scale error, range:", (self.low_x, self.low_x + self.total_x),
                                   (self.low_y, self.low_y + self.total_y),
                                   (self.low_z, self.low_z + self.total_z),
                                   "Actual:", x, y, z,
                                   "Position:",
-                                  part.x, part.y, part.z)
+                                  part.x, part.y, part.z, file=sys.stderr)
                         z += 0.5
                     y += 0.5
                 x += 0.5
@@ -330,7 +340,11 @@ class ShipStats:
     def _traversal_armors(self):
         armors = self.etree.find("armorboards")
         for ab in armors.findall("armorboard"):
-            self.armor_plates_weight += armor_plate_weight(ab)
+            plate_weight = armor_plate_weight(ab)
+            if plate_weight >= self.min_armor:
+                self.armor_plates_weight += plate_weight
+            else:
+                self.non_armor_plates += plate_weight
 
     def _traversal_parts(self):
         parts = self.etree.find("parts")
@@ -376,7 +390,9 @@ class ShipStats:
                     thickness = int(part_id[-3:]) // 2
                     density = armor_block_density(thickness, part_id[-4] == "1")
                     volume = real_weight / density
-                    self.armor_block_extra_weight += real_weight - volume * HULL_DENSITY
+                    block_weight = real_weight - volume * HULL_DENSITY
+                    self.armor_block_extra_weight += block_weight
+
                 self._add_part(part)
 
     def _calculate_decks(self):
@@ -428,10 +444,8 @@ class ShipStats:
 
 
 def generate_report(ship_name: str):
-    if not ship_name.endswith(".xml"):
-        ship_name += ".xml"
     if not os.path.exists(ship_name):
-        raise IOError()
+        raise FileNotFoundError(ship_name)
     ship = ShipStats(ship_name)
     report = ship.generate_report()
     # print(report)
@@ -445,13 +459,84 @@ def generate_report(ship_name: str):
 
 
 if __name__ == '__main__':
-    s_name = input("请输入战舰名称或图纸路径: ")
-    try:
-        generate_report(s_name)
-        print("报告生成成功！")
-    except IOError:
-        print("找不到该图纸！")
-    except Exception as e:
-        print("哦豁，生成失败，原因各人看:")
-        traceback.print_exc()
-    input("按任意键退出")
+    path = os.getcwd()
+
+    print("欢迎使用工艺战舰船只报告生成器！")
+    print('请输入战舰名称，或<help>查看帮助，<:q>退出。')
+
+    input_ = input(path + ">")
+
+    while input_ != ":q" and input_ != "：q":
+        cmd = input_.strip()
+        if cmd == "ls" or cmd.startswith("ls "):
+            if cmd == "ls":
+                list_path = path
+            else:
+                list_path = os.path.join(path, cmd[3:].strip())
+            try:
+                file_list = os.listdir(list_path)
+                to_print = "\n".join(file_list)
+                print(to_print)
+            except FileNotFoundError:
+                print("路径不存在")
+        elif cmd.startswith("cd "):
+            cd_path = cmd[3:].strip()
+            if cd_path == ".." or cd_path == "../":
+                new_path = os.path.dirname(path)
+            elif cd_path == "." or cd_path == "./":
+                new_path = path
+            else:
+                new_path = os.path.join(path, cmd[3:].strip())
+            if os.path.exists(new_path):
+                path = new_path
+            else:
+                print("路径不存在")
+        elif cmd == "all" or cmd.startswith("all "):
+            if cmd == "all":
+                list_path = path
+            else:
+                list_path = os.path.join(path, cmd[4:].strip())
+            if os.path.exists(list_path):
+                listed_files = os.listdir(list_path)
+                blueprints = []
+                for listed_file in listed_files:
+                    if listed_file.endswith(".xml"):
+                        blueprints.append(os.path.join(list_path, listed_file))
+                confirm = input(f"检测到{len(blueprints)}张图纸，是否继续？继续:Y / N:取消")
+                if confirm.strip().upper() == "Y":
+                    failures = 0
+                    successes = 0
+                    for blueprint in blueprints:
+                        try:
+                            print(f"[{successes + failures + 1}/{len(blueprints)}]"
+                                  f" 正在分析: {blueprint}")
+                            generate_report(blueprint)
+                            successes += 1
+                        except Exception as e:
+                            print("生成失败！", blueprint, file=sys.stderr)
+                            traceback.print_exc()
+                            failures += 1
+                    print(f"批量生成完成！成功 {successes} 张，失败 {failures} 张。")
+            else:
+                print("路径不存在")
+        elif cmd == "help":
+            print('请输入战舰名称，或<help>查看帮助，<:q>退出。')
+            print("命令:")
+            print("  all [dir]  -- 批量生成当前目录或指定目录下的所有图纸\n"
+                  "  cd <dir>   -- 跳转到目录\n"
+                  "  ls         -- 列出当前目录下的所有文件\n"
+                  "  ls <dir>   -- 列出指定目录下的所有文件\n")
+        else:
+            blueprint = os.path.join(path, cmd)
+            if not blueprint.endswith(".xml"):
+                blueprint += ".xml"
+            try:
+                generate_report(blueprint)
+                print("报告生成成功！")
+            except IOError:
+                print("找不到该图纸！")
+            except Exception as e:
+                print("哦豁，生成失败，原因各人看:")
+                traceback.print_exc()
+
+        input_ = input(path + ">")
